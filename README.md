@@ -1,9 +1,18 @@
 # Micropython button debouncer
 Micropython implementation of a debounced button. Tested to work well with the Raspberry Pi Pico.
 
-Since this Button implementation is interrupt-based there is no need to periodically poll/query the status of the button.
+### How to use:
+1. Connect a button to ground and any pin of the microcontroller
+2. Upload `button.py` to the microcontroller
+3. Use according to the below example script
 
-Example code:
+### Features:
+- Simple and easy to use
+- Interrupt/Callback based -> no polling
+- Supports short and long presses 
+- Software debounce -> no additional hardware required
+
+### Example code:
 ```python
 
 from button import Button
